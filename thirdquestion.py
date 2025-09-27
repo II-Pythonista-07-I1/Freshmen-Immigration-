@@ -1,11 +1,22 @@
-'''Problem: Positive, Negative, or Zero
+'''A. Watermelon (Codeforeces)
+time limit per test1 second
+memory limit per test64 megabytes
+One hot summer day Pete and his friend Billy decided to buy a watermelon. They chose the biggest and the ripest one, in their opinion. After that the watermelon was weighed, and the scales showed w kilos. They rushed home, dying of thirst, and decided to divide the berry, however they faced a hard problem.
 
-Write a Python program that:
+Pete and Billy are great fans of even numbers, that's why they want to divide the watermelon in such a way that each of the two parts weighs even number of kilos, at the same time it is not obligatory that the parts are equal. The boys are extremely tired and want to start their meal as soon as possible, that's why you should help them and find out, if they can divide the watermelon in the way they want. For sure, each of them should get a part of positive weight.
 
-Asks the user to enter 20 numbers.
+Input
+The first (and the only) input line contains integer number w (1 ≤ w ≤ 100) — the weight of the watermelon bought by the boys.
 
-Checks if each number is positive, negative, or zero.
+Output
+Print YES, if the boys can divide the watermelon into two parts, each of them weighing even number of kilos; and NO in the opposite case.'''
 
-Prints the result.'''
 
-n1,n2,n3,n4,n5,n6,n6,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20=map(int,input().split()); [print(f'{n} is posotive') if n>0 else print(f'{n} is negative')if n<0 else print('Zero!!!') for n in (n1,n2,n3,n4,n5,n6,n6,n8,n9,n10,n11,n12,n13,n14,n15,n16,n17,n18,n19,n20)] 
+#The Solution:
+
+n = int(input())
+
+if n >=4 and n%2 == 0:
+    print('YES')
+else:
+    print('NO')
